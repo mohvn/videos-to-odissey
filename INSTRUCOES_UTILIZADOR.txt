@@ -1,0 +1,40 @@
+================================================================================
+  ODYSEE UPLOAD - Instruções para utilizador final
+================================================================================
+
+REQUISITOS:
+  - Windows 10 ou 11
+  - Google Chrome instalado (o programa abre o Chrome automaticamente)
+  - Conta Odysee
+
+ESTRUTURA DA PASTA (tudo na mesma pasta que odysee_upload.exe):
+
+  OdyseeUploader/
+  ├── odysee_upload.exe    <- o programa
+  ├── Rodar_Upload.bat     <- duplo-clique aqui para enviar
+  ├── .env                 <- suas credenciais (ver abaixo)
+  ├── thumb.jpg            <- imagem de capa para todos os videos
+  └── videos/              <- coloque aqui os ficheiros .mp4
+      ├── video1.mp4
+      ├── video2.mp4
+      └── ...
+
+FICHEIRO .env:
+  Crie um ficheiro chamado ".env" (sem aspas) com o Bloco de Notas e guarde
+  na mesma pasta. Conteúdo:
+
+    ODYSEE_EMAIL=seu_email@exemplo.com
+    ODYSEE_PASSWORD=sua_senha
+
+  Substitua pelos seus dados reais. Guarde como "Todos os ficheiros" e
+  nome ".env" (o Windows pode avisar - confirme).
+
+COMO USAR:
+  1. Coloque os videos na pasta "videos"
+  2. Coloque o thumb.jpg na pasta principal
+  3. Duplo-clique em "Rodar_Upload.bat"
+  4. O Chrome abre, faz login e envia os videos automaticamente
+  5. No fim, pressione Enter para fechar
+
+NOTA: O Chrome tem de estar instalado. O programa descarrega o driver
+      automaticamente na primeira execução.
